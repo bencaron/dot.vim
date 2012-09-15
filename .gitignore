@@ -1,0 +1,7 @@
+.DS_Store*
+.VimballRecord*
+.netrwhist*
+.vimrc.un~*
+..gitignore.un~*
+.README.md.un~*
+tmp
