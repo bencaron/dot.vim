@@ -4,6 +4,8 @@ call pathogen#helptags()
 
 set nocompatible
 
+""""""""""""""""""""""""""""""""""""""""""""""""
+" GUI mode
 if has("gui")
     "set fullscreen
     " Transparency
@@ -29,6 +31,11 @@ if has("gui")
     "" FIXME: icursor?
     highlight iCursor guifg=white guibg=steelblue
 endif
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""
+" General/generic settings
+""""""""""""""""""""""""""""""""""""""""""""""""
 
 
 " Make backspace behave in a sane manner.
@@ -63,8 +70,9 @@ set expandtab
 
 set pastetoggle=<F2>
 
-""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""
 " plugin-specific configs
+""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Powerline - bundle/powerline
 
@@ -77,12 +85,20 @@ let g:Powerline_symbols = 'unicode'
 "let g:Powerline_colorscheme = 'skwp'
 let g:Powerline_colorscheme = 'default'
 
+" Gundo
+""""""""
+let g:gundo_width = 60
+let g:gundo_preview_height = 40
+"let g:gundo_right = 1
 
 
 
-""""""""""""
+
+""""""""""""""""""""""""""""""""""""""""""""""""
 " autoloads
-""
+""""""""""""""""""""""""""""""""""""""""""""""""
+
+
 " Automatically reload .vimrc when changing
 autocmd! bufwritepost .vimrc source %
 
@@ -100,9 +116,9 @@ au BufNewFile,BufRead Vagrantfile setf ruby
 autocmd  BufEnter *   execute ":lcd " . expand("%:p:h")
 
 
-""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""
 " Mappings
-""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""
 "
 " First, set , as leader key
 let mapleader = ","
@@ -115,6 +131,10 @@ inoremap jk <esc>
 " Turn on Switch on -
 nnoremap - :Switch<cr>
 
+"Map Gundo
+nnoremap <F2> :GundoToggle<CR>
+
+"" BROKEN
 "map <F8> :Tlist<CR>
 map <F8> :TagbarToggle<CR>
 map <F9> :NERDTreeToggle<CR>
@@ -126,6 +146,8 @@ map  ,ic :s/^/#/g<CR>:let @/ = ""<CR>
 vmap ,rc :s/^#//g<CR>:let @/ = ""<CR>
 map  ,rc :s/^#//g<CR>:let @/ = ""<CR>
 
+
+"" Set sane tab mode
 if has("macunix")
 	" Mac only ; see after for Alt-base shortcut
 	map <D-1> :tabn 1<CR>
