@@ -112,6 +112,8 @@ let mapleader = ","
 " From http://learnvimscriptthehardway.stevelosh.com/chapters/10.html
 inoremap jk <esc>
 
+" Turn on Switch on -
+nnoremap - :Switch<cr>
 
 "map <F8> :Tlist<CR>
 map <F8> :TagbarToggle<CR>
