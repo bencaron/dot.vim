@@ -4,7 +4,7 @@ call pathogen#helptags()
 
 set nocompatible
 
-if has("gui_running")
+if has("gui")
     "set fullscreen
     " Transparency
     "set transparency=2
@@ -62,6 +62,22 @@ set smarttab
 set expandtab
 
 set pastetoggle=<F2>
+
+""""""""""""
+" plugin-specific configs
+
+" Powerline - bundle/powerline
+
+set nocompatible   " Disable vi-compatibility
+set laststatus=2   " Always show the statusline
+set encoding=utf-8 " Necessary to show Unicode glyphs
+
+let g:Powerline_symbols = 'unicode'
+" skwp or default or..?
+"let g:Powerline_colorscheme = 'skwp'
+let g:Powerline_colorscheme = 'default'
+
+
 
 
 """"""""""""
