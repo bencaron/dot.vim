@@ -107,6 +107,12 @@ autocmd  BufEnter *   execute ":lcd " . expand("%:p:h")
 " First, set , as leader key
 let mapleader = ","
 
+ 
+" Force back to normal mode from insert mode
+" From http://learnvimscriptthehardway.stevelosh.com/chapters/10.html
+inoremap jk <esc>
+
+
 "map <F8> :Tlist<CR>
 map <F8> :TagbarToggle<CR>
 map <F9> :NERDTreeToggle<CR>
