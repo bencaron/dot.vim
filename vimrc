@@ -70,6 +70,11 @@ set expandtab
 
 set pastetoggle=<F2>
 
+"highlight TODO FIXME 
+" http://stackoverflow.com/questions/4097259/in-vim-how-do-i-highlight-todo-and-fixme
+syn match   myTodo   contained   "\<\(TODO\|FIXME|BUG\):"
+hi def link myTodo Todo
+
 """"""""""""""""""""""""""""""""""""""""""""""""
 " plugin-specific configs
 """"""""""""""""""""""""""""""""""""""""""""""""
