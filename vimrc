@@ -4,6 +4,16 @@ call pathogen#helptags()
 
 set nocompatible
 
+syntax enable
+
+set background=dark
+if &diff
+  set t_Co=256
+  colorscheme peaksea
+else
+  colorscheme solarized
+endif
+
 """"""""""""""""""""""""""""""""""""""""""""""""
 " GUI mode
 if has("gui")
@@ -17,6 +27,7 @@ if has("gui")
     "set numberwidth=5
 
     colorscheme murphy
+    "colorscheme solarized
 
     "http://vim.wikia.com/wiki/Hide_toolbar_or_menus_to_see_more_text
     set guioptions-=T  "remove toolbar
