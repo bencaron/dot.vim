@@ -5,3 +5,4 @@
 ..gitignore.un~*
 .README.md.un~*
 tmp
+bundle/*/doc/tags
