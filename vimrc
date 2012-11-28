@@ -63,6 +63,7 @@ set ruler
 "set cindent
 set smartindent
 set autoindent
+filetype on
 filetype indent on
 filetype plugin on
 
@@ -124,6 +125,8 @@ au BufNewFile,BufRead *.pde setf arduino
 "VagrantFile mode
 au BufNewFile,BufRead Vagrantfile setf ruby
 
+"md is Markdown, not modula2 :P
+au BufNewFile,BufRead *.md set filetype=markdown
 
 " Extrait _en entier_! du script cd.vim de vim.sf.net
 " Fait automatiquement un "cd" vers le répertoire du buffer
@@ -189,6 +192,5 @@ else
 	map <A-9> :tabn 9<CR>
 	map <A-0> :tabnew<CR>
 endif
-
 
 
