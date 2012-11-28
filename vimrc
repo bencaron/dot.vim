@@ -67,6 +67,22 @@ filetype on
 filetype indent on
 filetype plugin on
 
+"http://items.sjbach.com/319/configuring-vim-right
+set hidden
+
+" `a is more usefull than 'a, swap them
+nnoremap ' `
+nnoremap ` '
+
+set wildmenu
+set wildmode=list:longest
+
+" case sensitive only if there is CAPS in search terms
+set ignorecase
+set smartcase
+
+"/vim-right
+
 "http://vim.wikia.com/wiki/Hide_toolbar_or_menus_to_see_more_text
 ":set guioptions-=m  "remove menu bar
 ":set guioptions-=T  "remove toolbar
