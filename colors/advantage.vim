@@ -23,7 +23,8 @@ hi Include guifg=#37C9FF guibg=NONE guisp=NONE gui=NONE ctermfg=81 ctermbg=NONE 
 "hi TabLineSel -- no settings --
 hi StatusLineNC guifg=#696969 guibg=#004443 guisp=#004443 gui=NONE ctermfg=242 ctermbg=23 cterm=NONE
 "hi CTagsMember -- no settings --
-hi NonText guifg=#9FADC5 guibg=#334C75 guisp=#334C75 gui=NONE ctermfg=146 ctermbg=60 cterm=NONE
+"hi NonText guifg=#9FADC5 guibg=#334C75 guisp=#334C75 gui=NONE ctermfg=146 ctermbg=60 cterm=NONE
+hi NonText guifg=#9FADC5 guibg=#000000 guisp=#334C75 gui=NONE ctermfg=146 ctermbg=60 cterm=NONE
 "hi CTagsGlobalConstant -- no settings --
 hi DiffText guifg=NONE guibg=#cd2626 guisp=#cd2626 gui=bold ctermfg=NONE ctermbg=160 cterm=bold
 hi ErrorMsg guifg=#ffffff guibg=#ff0000 guisp=#ff0000 gui=NONE ctermfg=15 ctermbg=196 cterm=NONE
