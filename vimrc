@@ -12,7 +12,8 @@ if &diff
   colorscheme peaksea
 else
 "  colorscheme solarized
-  colorscheme advantage
+  "colorscheme advantage
+  colorscheme murphy
 endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""
@@ -27,8 +28,8 @@ if has("gui")
     "autocmd InsertLeave * :set relativenumber
     "set numberwidth=5
 
-    "colorscheme murphy
-    colorscheme advantage
+    colorscheme murphy
+    "colorscheme advantage
     "colorscheme solarized
 
     "http://vim.wikia.com/wiki/Hide_toolbar_or_menus_to_see_more_text

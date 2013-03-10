@@ -34,3 +34,6 @@
 [submodule "bundle/chef"]
 	path = bundle/chef
 	url = https://github.com/t9md/vim-chef
+[submodule "bundle/gitgutter"]
+	path = bundle/gitgutter
+	url = git://github.com/airblade/vim-gitgutter.git
