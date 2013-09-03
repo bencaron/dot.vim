@@ -37,3 +37,6 @@
 [submodule "bundle/gitgutter"]
 	path = bundle/gitgutter
 	url = git://github.com/airblade/vim-gitgutter.git
+[submodule "bundle/AutoClose"]
+	path = bundle/AutoClose
+	url = https://github.com/vim-scripts/AutoClose.git

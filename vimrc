@@ -2,7 +2,34 @@
 call pathogen#infect()
 call pathogen#helptags()
 
+"" Vundle setup
 set nocompatible
+" vundle wants this OFF
+"filetype on
+filetype off
+
+" vundle setup
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+" list my bundles
+""""""""""
+" chef
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "garbas/vim-snipmate"
+Bundle "vadv/vim-chef"
+autocmd FileType ruby,eruby set filetype=ruby.eruby.chef
+
+" turn plugins on
+filetype plugin indent on     " required!
+
+"" /vundle
+
 
 syntax enable
 
@@ -66,7 +93,6 @@ set ruler
 "set cindent
 set smartindent
 set autoindent
-filetype on
 filetype indent on
 filetype plugin on
 
@@ -184,6 +210,19 @@ map  ,ic :s/^/#/g<CR>:let @/ = ""<CR>
 vmap ,rc :s/^#//g<CR>:let @/ = ""<CR>
 map  ,rc :s/^#//g<CR>:let @/ = ""<CR>
 
+" splits tips from
+" http://robots.thoughtbot.com/post/48275867281/vim-splits-move-faster-and-more-naturally
+" shortcut from C-Wj to C-j
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+" split below/right
+set splitbelow
+set splitright
+
+nmap <C-S> :vsplit<CR>
+"/ splits
 
 "" Set sane tab mode
 if has("macunix")
