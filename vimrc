@@ -200,8 +200,8 @@ nnoremap <F2> :GundoToggle<CR>
 
 "" BROKEN
 "map <F8> :Tlist<CR>
-map <F8> :TagbarToggle<CR>
-map <F9> :NERDTreeToggle<CR>
+map <F5> :TagbarToggle<CR>
+map <F6> :NERDTreeToggle<CR>
 
 " Pour ajouter et enlever des commentaires. Suppose des commentaires
 " avec des #.. :\ 
