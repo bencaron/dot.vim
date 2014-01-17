@@ -210,6 +210,9 @@ map  ,ic :s/^/#/g<CR>:let @/ = ""<CR>
 vmap ,rc :s/^#//g<CR>:let @/ = ""<CR>
 map  ,rc :s/^#//g<CR>:let @/ = ""<CR>
 
+" remove trailing whitespace"
+nnoremap <Leader>rtw :%s/\s\+$//e<CR>
+
 " splits tips from
 " http://robots.thoughtbot.com/post/48275867281/vim-splits-move-faster-and-more-naturally
 " shortcut from C-Wj to C-j
@@ -251,4 +254,17 @@ else
 	map <A-0> :tabnew<CR>
 endif
 
-
+" suggested by @failshell
+if &term =~ "xterm.*" || &term =~ "screen*"
+  let &t_ti = &t_ti . "\e[?2004h"
+  let &t_te = "\e[?2004l" . &t_te
+  function! XTermPasteBegin(ret)
+    set pastetoggle=<Esc>[201~
+    set paste
+    return a:ret
+  endfunction
+  map <expr> <Esc>[200~ XTermPasteBegin("i")
+  imap <expr> <Esc>[200~ XTermPasteBegin("")
+  cmap <Esc>[200~ <nop>
+  cmap <Esc>[201~ <nop>
+endif
