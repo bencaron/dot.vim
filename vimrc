@@ -18,6 +18,25 @@ Bundle 'gmarik/vundle'
 
 " list my bundles
 """"""""""
+" fixme new plugins!
+"""Bundle 'SirVer/ultisnips'
+"" Track the engine.
+"Bundle 'SirVer/ultisnips'
+"
+"" Snippets are separated from the engine. Add this if you want them:
+"Bundle 'honza/vim-snippets'
+"
+"" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+"let g:UltiSnipsExpandTrigger="<tab>"
+"let g:UltiSnipsJumpForwardTrigger="<c-b>"
+"let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+"
+"" If you want :UltiSnipsEdit to split your window.
+"let g:UltiSnipsEditSplit="vertical"
+"
+"" conflict?"
+
+
 " chef
 Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
