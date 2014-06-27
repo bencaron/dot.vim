@@ -155,6 +155,14 @@ hi def link myTodo Todo
 " plugin-specific configs
 """"""""""""""""""""""""""""""""""""""""""""""""
 
+" for markdown preview"
+" https://github.com/suan/vim-instant-markdown/issues/41
+" aussi fait https://github.com/dotphiles/dotzsh#mac-os-x
+" sudo chmod ugo-x /usr/libexec/path_helper
+"
+set shell=bash\ -i
+
+
 " Powerline - bundle/powerline
 
 set nocompatible   " Disable vi-compatibility
